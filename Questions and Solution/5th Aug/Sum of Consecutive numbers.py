@@ -12,10 +12,10 @@
 # li = [int(i) for i in input().split()] # using List Comp.
 # print(li)
 
-import random
-res = random.sample(range(1,50),7)
-print(res)
-n = int(input("Enter a number to start summation: "))
+# import random
+# res = random.sample(range(1,50),7)
+# print(res)
+# n = int(input("Enter a number to start summation: "))
 
 # vineeth
 # n = int(input(""))
@@ -28,3 +28,15 @@ n = int(input("Enter a number to start summation: "))
 # max = 
 
 # Shriyans
+li = [int(i) for i in input().split()]
+m = int(input())
+sum = maxSum = 0
+for i in range(len(li)):
+    if(i < m):
+        sum += li[i]
+    else:
+        sum -= li[i - m]
+        sum += li[i]
+    if(sum > maxSum):
+        maxSum = sum
+print(maxSum)
