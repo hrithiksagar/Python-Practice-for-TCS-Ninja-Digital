@@ -1,0 +1,2 @@
+li = [int(i) for i in input().split()] # using List Comp.
+print(li)
