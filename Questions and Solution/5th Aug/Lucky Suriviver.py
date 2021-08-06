@@ -13,3 +13,8 @@ def lucky(n):
         
 n = int(input("Enter total number of people: "))
 print(lucky(n))
+
+# import math
+# n = int(input())
+# print("A = ",int(math.log2(n)),"\nL = ",n - 2**int(math.log2(n)))
+# print("2(L) + 1 =",2 * (n - 2**int(math.log2(n))) + 1)
