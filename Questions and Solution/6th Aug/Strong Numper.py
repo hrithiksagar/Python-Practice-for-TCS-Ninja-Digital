@@ -19,5 +19,11 @@
 # Output: Yes it is a strone number
 # Explanation: 1! + 4! + 5!
 # =145
-
+from math import factorial
 n = input("enter a number ")
+s = sum([factorial(int(x)) for x in n])
+if int(n) ==s:
+    print("Strong number")
+else:
+    print("Not Strong Number")
+    
