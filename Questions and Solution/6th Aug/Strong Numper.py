@@ -27,3 +27,6 @@ if int(n) ==s:
 else:
     print("Not Strong Number")
     
+    
+
+    
